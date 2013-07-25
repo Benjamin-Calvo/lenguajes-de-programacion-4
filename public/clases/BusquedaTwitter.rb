@@ -1,15 +1,14 @@
 
-
 #Clase que ejecuta los procesos necesarios para hacer la consulta a Twitter
 class BusquedaTwitter
 	attr_reader :resultado
 	def initialize(palabra,contador=2)
 		#configura el usuario
 		Twitter.configure do |config|
-			config.consumer_key = "yGTcqkmpIDyGRU1xngysYw"
-			config.consumer_secret = "1bQPA6wuwTcHSv6nD1mRqfhxJlmv9geEfk9dfN5k"
-			config.oauth_token = "1520281886-zCl80qdRLxyGXs15VO56qRJfa4sAQyrPWywH0fP"
-			config.oauth_token_secret = "aVcUWSLQ9aWzbu6wj1osL0yvveWkery27CWmmwYRR8"
+			config.consumer_key = #llave de consumidor de Twitter
+			config.consumer_secret = #contraseña de consumidor de Twitter
+			config.oauth_token = #token de autenticación de Twitter
+			config.oauth_token_secret = #contraseña de autenticación de Twitter
 		end
 		if contador == "" then
 			contador = 2 
