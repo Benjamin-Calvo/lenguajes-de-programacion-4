@@ -7,8 +7,8 @@ class BusquedaInstagram
 	def initialize(palabra,cant=2)
 		#configura el usuario
 		Instagram.configure do |config|
-			config.client_id = "419714448"
-			config.access_token = "419714448.5b9e1e6.54ac3bc1f3804c7288a3ef9bca4ebc62"
+			config.client_id = #identificador de cliente de Instagram
+			config.access_token = #token de acceso de Instagram
 		end
 		i=500
 		@result = Instagram.tag_recent_media(palabra, options={:count=>cant}) 	
